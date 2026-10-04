@@ -1,1 +1,5 @@
-includes/config.inc.php
+﻿.env
+.env.local
+vendor/
+node_modules/
+*.log
