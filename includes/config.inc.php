@@ -1,13 +1,12 @@
 <?php
   session_start();
-  $servername = "hms.test"; //change this  accordingly
+  $servername = "localhost";
   $dBUsername = "root";
-  $dBPassword = "root";
+  $dBPassword = "";
   $dBName = "hostel_management_system";
- // session_start();
-  $conn=mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
+  $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
   if (!$conn) {
-    die("Connection Failed: ".mysqli_connect_error());
+    die("Connection Failed: " . mysqli_connect_error());
   }
 ?>
